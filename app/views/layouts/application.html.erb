@@ -9,11 +9,13 @@
   </head>
 
   <body>
-    <%= yield %>
-    
-    <%= form_tag '/logout', method:"post" do %>
-    <%= submit_tag 'Log Out'%>
-    <% end %>
+    <div class="container">
+      <%= yield %>
+
+      <%= form_tag '/logout', method:"post" do %>
+      <%= submit_tag 'Log Out'%>
+      <% end %>
+    </div>
 
 
   </body>

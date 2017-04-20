@@ -3,6 +3,6 @@ class Sight < ApplicationRecord
   has_many :users, through: :vacations
 
   def name_and_city
-    "#{self.city} for #{self.name}"
+    "| #{self.city} | #{self.name}"
   end
 end

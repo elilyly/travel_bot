@@ -1,12 +1,16 @@
 <!-- new trip page, create -->
-<h3>
-<label>Where are you going?</label><br>
-</h3>
+<div class="row">
+  <div class="input-field col s12">
+    <h3>
+    <label>Where are you going?</label><br>
+    </h3>
 
-<%= form_for @vacation do |f| %>
-<%= f.label  "Name Your Vacation here:" %>
-<%= f.text_field :name %>
-<%= f.collection_select(:sight_id, Sight.all, :id, :name_and_city)  %>
+    <%= form_for @vacation do |f| %>
+    <%= f.label  "Name Your Vacation here:" %>
+    <%= f.text_field :name %>
+    <%= f.collection_select(:sight_id, Sight.all, :id, :name_and_city, {}, {:class => 'browser-default'})  %>
 
-<%= f.submit %>
-<% end %>
+    <%= f.submit %>
+    <% end %>
+  </div>
+</div>
