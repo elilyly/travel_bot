@@ -1,0 +1,14 @@
+<!-- user will be coming from having newly created "trip" -->
+
+<!-- here are some suggestions to what you want to see for #{city_name} -->
+<!-- suggestions will be pictures of sights associated with the key word of #{city_name} -->
+<!-- pictures will be acquired from Getty images -->
+<h1>Sights!</h1>
+
+<%= form_for @sight do |f| %>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+  <%= f.label "Things you want to do" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Add to Vacation" %>
+<% end %>

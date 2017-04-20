@@ -1,0 +1,35 @@
+<!-- user profile -->
+<!-- feature two buttons: "existing trip", "create trip" -->
+<!-- "create trip" button will lead to trip/new, choose city, include button "continue" which will link to trip/show(show trip) -->
+
+<!-- list out existing trip(make it a link): list out trips(trips#index) -->
+
+<h1> Welcome, <%= @user.name %> </h1>
+
+<h5>My Vacations</h5>
+
+
+<!-- # if a user has only 1 sight
+  -@user.vacations.sight
+#multiple -->
+<p>(need to work on listing vacation names for logged on user)</p>
+<p>(then these vacation names will be links to vacation#show aka /vacation/:id)</p>
+
+<% @user.vacations.each do |vacation|%>
+<li><%= link_to vacation.name%></li>
+  <%end %>
+
+<h5><%= link_to "Create Your Vacation", new_vacation_path %></h5>
+
+
+<p><%= link_to "Go to Travel Community Page", users_path %></p>
+
+
+
+<!-- "my vacations" can be a label -->
+<!-- iterate through vacations to get names  -->
+<!-- make links through the sights within vacations -->
+
+<!-- "My trips" should take us to trip/index-->
+<!-- <% link_to "Create New Vacation", new_vacation_path %> -->
+<!--we should redirect to trips/new when you click "Create New Trip" -->

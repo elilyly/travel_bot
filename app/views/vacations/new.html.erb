@@ -1,0 +1,10 @@
+<!-- new trip page, create -->
+<h3>
+<label>Where are you going?</label><br>
+</h3>
+
+<%= form_for @vacation do |f| %>
+<%= f.label  "Name Your Vacation here:" %>
+<%= f.text_field :name %>
+<%= f.submit %>
+<% end %>

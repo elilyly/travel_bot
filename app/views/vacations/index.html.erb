@@ -1,0 +1,6 @@
+<h3>Hello</h3>
+
+
+ <% @vacations.each do |vacation|  %>
+   <p><%= link_to vacation.name, vacation_path(vacation) %></p>
+    <% end %>

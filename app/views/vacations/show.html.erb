@@ -1,0 +1,14 @@
+<!-- Trip Name  -->
+<!-- Destination(City) -->
+<!-- start date -->
+<!-- end date -->
+<!-- submit -->
+
+<!-- once "submit", saves trip name = trip.id -->
+<!-- submit takes to sights/new -->
+
+<h3><%= @vacation.name %> <br></h3>
+
+<% if @vacation.sight %>
+  <% @vacation.sight.name %>
+<% end %>

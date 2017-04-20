@@ -1,0 +1,7 @@
+<!-- display what user's inputs were for the city name & activity_description -->
+
+<h1><label>Your desired activity in <%= @sight.city%>:</label>
+</h1>
+<ul><h2><%= @sight.name.capitalize %></h2></ul>
+<%= button_to "Add More City and Activity to Vacation", new_sight_path, :method => "get" %>
+<%= button_to "Check out your vacation", vacations_path, :method => "get" %>

@@ -1,0 +1,10 @@
+<h2>Welcome to Our Travel Community</h2>
+<!-- lists all users -->
+
+<p>(list all users)</p>
+
+<% @users.each do |user| %>
+<ul><%= link_to user.name, sights_path %></ul>
+<% end %>
+
+<p><%= link_to "My Profile", user_path(@current_user) %></p>
