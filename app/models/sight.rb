@@ -5,4 +5,5 @@ class Sight < ApplicationRecord
   def name_and_city
     "| #{self.city} | #{self.name}"
   end
+  
 end
