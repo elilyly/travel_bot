@@ -7,8 +7,6 @@
 <!-- once "submit", saves trip name = trip.id -->
 <!-- submit takes to sights/new -->
 
-<h3><%= @vacation.name %> <br></h3>
-
-<% if @vacation.sight %>
-  <% @vacation.sight.name %>
-<% end %>
+<h3><%= @vacation.name %></h3>
+<div>City: <%=@vacation.sight.city %></div>
+<div>Sight Name: <%= @vacation.sight.name %></div><br><br>
