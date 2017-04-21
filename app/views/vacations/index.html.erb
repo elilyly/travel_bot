@@ -2,7 +2,7 @@
 
 
  <% @vacations.each do |vacation|  %>
-   <p><%= link_to vacation.name, vacation_path(vacation) %></p>
+   <p><%= link_to vacation.name, vacation_path(vacation) %> || <%= link_to "Edit", edit_vacation_path(vacation) %></p>
 
     <% end %>
 

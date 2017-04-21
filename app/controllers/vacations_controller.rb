@@ -26,6 +26,15 @@ class VacationsController < ApplicationController
     end
   end
 
+  def edit
+    @vacation = Vacation.find(params[:id])
+  end
+
+  def update
+    @vacation = Vacation.find(params[:id])
+    @vacation.update(vacation_params)
+    redirect_to vacation_path(@vacation)
+  end
 
   private
 
