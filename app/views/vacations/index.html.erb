@@ -1,6 +1,14 @@
-<h3>Hello</h3>
+<h3>Upcoming Vacations</h3>
 
 
  <% @vacations.each do |vacation|  %>
    <p><%= link_to vacation.name, vacation_path(vacation) %></p>
+
     <% end %>
+
+
+<h3>Past Vacations</h3>
+
+
+
+<%= link_to "Add another vacation", new_sight_path %>

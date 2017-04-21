@@ -29,11 +29,10 @@ class VacationsController < ApplicationController
     end
   end
 
+
   private
 
   def vacation_params
     params.require(:vacation).permit(:name, :sight_id, :user_id)
   end
 end
-
-#<!-- <%  f.collection_check_boxes(:sight_ids, Sight.all, :id, :name) %> -->

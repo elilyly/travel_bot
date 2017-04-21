@@ -1,1 +1,8 @@
-@import "materialize";
+
+@import 'materialize';
+
+$translucent-red: #ad1457 ;
+body {
+  color: opacify($translucent-red, 0.7);
+  background-color: transparentize($translucent-red, 0.7);
+}

@@ -13,7 +13,7 @@ class SightsController < ApplicationController
     @sight = Sight.new(sight_params)
 
     @sight.save
-    redirect_to sight_path(@sight)
+    redirect_to new_vacation_path
   end
 
   def show

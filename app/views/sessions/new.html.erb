@@ -1,9 +1,13 @@
-<h1>Sign In<%= form_tag sessions_path, method:"post" do %>
-Name: <%=  text_field_tag "user[name]"%>
-Password: <%= password_field_tag "user[password]" %>
+<div align="center">
+<br>
+<br>
+<%= form_tag sessions_path, method:"post" do %>
+username: <%=  text_field_tag "user[name]"%>
+password: <%= password_field_tag "user[password]" %>
 <%= submit_tag 'Sign In'%>
-<% end %></h1>
+<% end %>
 
 <%= form_tag '/users/new', method:"get" do %>
 <%= submit_tag "Sign Up" %>
 <% end %>
+</div>
