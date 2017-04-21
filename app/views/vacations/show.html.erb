@@ -11,4 +11,5 @@
 <div>City: <%=@vacation.sight.city %></div>
 <div>Sight Name: <%= @vacation.sight.name %></div>
 <div>Dates: <%=@vacation.vacation_dates %></div><br><br>
+<%= link_to "Edit Page", edit_vacation_path(@vacation) %><br><br>
 <%= link_to "View your Vacations List", vacations_path %>
