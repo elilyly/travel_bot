@@ -5,18 +5,6 @@
 <!-- list out existing trip(make it a link): list out trips(trips#index) -->
 
 <h1> Welcome, <%= @user.name %> </h1>
+ <button><%= link_to "My Vacations", vacations_path %> </button>
 
-<h5>My Vacations</h5>
-
-
-<!-- # if a user has only 1 sight
-  -@user.vacations.sight
-#multiple -->
-<!-- <p>(need to work on listing vacation names for logged on user)</p>
-<p>(then these vacation names will be links to vacation#show aka /vacation/:id)</p> -->
-
-<% @user.vacations.each do |vacation|%>
-<li><%= link_to vacation.name, sights_path%></li>
-  <%end %>
-
-<h5><%= link_to "Create Your Vacation", new_sight_path %></h5>
+<h5><button><%= link_to "Create Your Vacation", new_sight_path %></button></h5>

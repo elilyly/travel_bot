@@ -1,9 +1,6 @@
 class VacationsController < ApplicationController
   def index
-    @vacations = Vacation.all
-    # @vacations = Vacation.find(session[:user_id])
-    # @user = User.find(session[:user_id])
-    #@vacations = @user.vacations
+    @vacations = current_user.vacations
   end
 
   def show
