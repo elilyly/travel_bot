@@ -3,5 +3,20 @@
     <%= f.label  "Edit Your Vacation here:" %>
     <%= f.text_field :name %>
     <%= f.collection_select(:sight_id, Sight.all, :id, :name_and_city, {}, {:class => 'browser-default'})  %><br>
+    <div class="row">
+      <div class="input-field col s3">
+
+      Start Date:
+      <%= f.date_field :start_date %>
+    </div>
+    </div>
+      <div class="row">
+        <div class="input-field col s3">
+
+      End Date:
+      <%= f.date_field :end_date %>
+
+    </div>
+    </div>
     <h6><%= f.submit %></h6>
     <% end %>
