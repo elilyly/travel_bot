@@ -1,0 +1,9 @@
+<%= form_for @sight do |f| %>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+  <%= f.label "Things you want to do" %>
+  <%= f.text_field :name %><br><br><br>
+  <center><%= f.submit "Add Sight To Vacation", :class => "waves-effect waves-red btn-flat" %></center>
+  <center><h6><%= link_to "Delete Sight", sight_path(@sight), method:"delete"%></h6></center>
+
+<% end %>

@@ -15,9 +15,10 @@
 
       End Date:
       <%= f.date_field :end_date %>
+    </div>
+    </div>
 
-    </div>
-    </div>
     <center><h6><%= f.submit :class => "waves-effect waves-red btn-flat"  %></h6></center>
-    <center><h6><%= link_to "Delete Vacation", vacations_path, :method=>:delete%></h6></center>
+    <center><h6><%= link_to "Delete Vacation", vacation_path(@vacation), method:"delete"%></h6></center>
+
     <% end %>

@@ -25,7 +25,7 @@
       <li>  <%= link_to "Home", user_path(session[:user_id]) %></li>
       <li>  <%= link_to "Logout", session_path(session[:user_id]), :method=>:delete %></li>
         <% end %>
-          <li><%= link_to "Travel Inspiration"%></li>
+          <li><%= link_to "Travel Inspiration", sights_path%></li>
     </ul>
   </div>
 </nav>

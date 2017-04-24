@@ -2,6 +2,7 @@
 
 <h1><label>Your desired activity in <%= @sight.city%>:</label>
 </h1>
-<ul><h2><%= @sight.name.capitalize %></h2></ul>
-<%= button_to "Add More City and Activity to Vacation", new_sight_path, :method => "get" %>
-<%= button_to "Check out your vacation", vacations_path, :method => "get" %>
+<ul><h2><%= @sight.name.capitalize %></h2></ul><br>
+<center><%= button_to "Add More City and Activity to Vacation", new_sight_path, :class => "waves-effect waves-red btn-flat",:method => "get" %></center>
+<center><%= button_to "Check out your vacation", vacations_path,:class => "waves-effect waves-red btn-flat", :method => "get" %></center>
+<center><h6><%= link_to "Delete Sight", sight_path(@sight), method:"delete"%></h6></center>
