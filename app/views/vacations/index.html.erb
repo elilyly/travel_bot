@@ -1,16 +1,15 @@
-<h3>Upcoming Vacations</h3>
+<h2>Upcoming Vacations</h2>
 
 
  <% @upcoming_vacations.each do |vacation|  %>
-   <p><%= link_to vacation.name, vacation_path(vacation) %> || <%= link_to "Edit", edit_vacation_path(vacation) %></p>
+   <p>|| <%= link_to vacation.name, vacation_path(vacation) %> || <%= link_to "Edit", edit_vacation_path(vacation) %></p>
 
     <% end %>
 
 
-<h3>Past Vacations</h3>
+<h2>Past Vacations</h2>
 
 <% @past_vacations.each do |vacation| %>
-<p> <%= link_to vacation.name, vacation_path(vacation) %></p>
+<p>|| <%= link_to vacation.name, vacation_path(vacation) %> ||</p>
 <% end %>
-
-<%= link_to "Create New Vacation", new_sight_path %>
+<center><br><br><br><br><%= button_to "Create New Vacation", '/sights/new' , :class => "waves-effect waves-red btn-flat", method: "get" %></center>

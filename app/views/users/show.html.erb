@@ -4,6 +4,7 @@
 
 <!-- list out existing trip(make it a link): list out trips(trips#index) -->
 
-<h1> TravelBot welcomes you, <%= @user.name %> </h1>
- <button><%= link_to "View or Edit Vacations", vacations_path %> </button>
-<h5><button><%= link_to "Create Your Vacation", new_sight_path %></button></h5>
+<center><br><br><br><br><br><br><h1> Welcome to TravelBot</h1></center><br><br><br><br>
+
+<center><%= button_to "Create Your Vacation", '/sights/new', :class => "waves-effect waves-red btn-flat", method:"get" %>
+<%= button_to "View or Edit Vacations", vacations_path, :class => "waves-effect waves-red btn-flat", method:"get" %></center>

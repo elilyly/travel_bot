@@ -7,11 +7,11 @@
 <!-- once "submit", saves trip name = trip.id -->
 <!-- submit takes to sights/new -->
 
-<h3><%= @vacation.name %></h3>
-<div>City: <%=@vacation.sight.city %></div>
-<div>Sight Name: <%= @vacation.sight.name %></div><br>
-<div>Start Date: <%=@vacation.start_date %></div><br>
-<div>End Date: <%=@vacation.end_date %></div><br>
+<h2><%= @vacation.name %></h2>
+<div><h5>City: <%=@vacation.sight.city %></h5></div>
+<div><h5>Sight Name: <%= @vacation.sight.name %></h5></div><br>
+<div><h5>Start Date: <%=@vacation.start_date %></h5></div>
+<div><h5>End Date: <%=@vacation.end_date %></h5></div><br><br><br><br>
 
-<%= link_to "Edit Vacation", edit_vacation_path(@vacation) %><br><br>
-<%= link_to "View your Vacations List", vacations_path %>
+<center><%= button_to "View Your Vacations List", vacations_path , :class => "waves-effect waves-red btn-flat", method: "get" %></center>
+<center><%= button_to "Edit Vacation", edit_vacation_path(@vacation), :class => "waves-effect waves-red btn-flat", method: "get" %></center>

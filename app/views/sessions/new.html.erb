@@ -2,12 +2,22 @@
 <br>
 <br>
 <%= form_tag sessions_path, method:"post" do %>
-username: <%=  text_field_tag "user[name]"%>
-password: <%= password_field_tag "user[password]" %>
-<%= submit_tag 'Sign In'%>
-<% end %>
+Username: <%=  text_field_tag "user[name]"%>
+Password: <%= password_field_tag "user[password]" %>
+<%= button_to "Enter", sessions_path, :class => "waves-effect waves-red btn-flat" %>
+<% end %><br><br>
 
-<%= form_tag '/users/new', method:"get" do %>
-<%= submit_tag "Sign Up" %>
+<div class="progress #4db6ac teal lighten-2">
+    <div class="indeterminate #ff80ab pink accent-1"></div>
+</div>
+<br>
+
+<%= form_tag '/users/new', method:"get" do %> <br> <br>
+<%= button_to "Sign Up", '/users/new', :class => "waves-effect waves-teal btn-flat" %>
 <% end %>
+</div><br>
+
+
+<div class="progress #4db6ac teal lighten-2">
+    <div class="indeterminate #ff80ab pink accent-1"></div>
 </div>

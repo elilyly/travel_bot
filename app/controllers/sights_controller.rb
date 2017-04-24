@@ -1,12 +1,11 @@
 class SightsController < ApplicationController
   def index
     @sights = Sight.all
+    @users = User.all
   end
 
   def new
     @sight = Sight.new
-    # how should we link sights to trips?
-    # Trips only have sight_id's ; how do we print out the name
   end
 
   def create

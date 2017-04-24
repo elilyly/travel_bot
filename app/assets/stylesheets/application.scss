@@ -1,8 +1,15 @@
-
 @import 'materialize';
 
-$translucent-red: #ad1457 ;
-body {
-  color: opacify($translucent-red, 0.7);
-  background-color: transparentize($translucent-red, 0.7);
-}
+
+
+// $translucent-red: #f5f5f5 ;
+// body {
+//   color: opacify($translucent-red, 0.4);
+//   background-color: transparentize($translucent-red, 1.0);
+// }
+
+
+
+ html, body, h1, h2, h3, h4, h5, h6 {
+   font-family: "Gilroy";
+ }
