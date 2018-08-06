@@ -1,24 +1,10 @@
-# README
+Travel Bot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Create a travel log using Travel Bot by adding your destination, date, and activities for your vacation
 
-Things you may want to cover:
 
-* Ruby version
+• Applied MVC pattern and Ruby on Rails techniques for app architecture and user flow 
 
-* System dependencies
+• Built RESTful API
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+• Integrated Materialize to style and format frontend
