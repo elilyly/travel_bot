@@ -8,3 +8,7 @@ Create a travel log using Travel Bot by adding your destination, date, and activ
 • Built RESTful API
 
 • Integrated Materialize to style and format frontend
+
+
+
+Demo Link: https://youtu.be/1uLz8Ig6Z_E
